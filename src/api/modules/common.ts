@@ -1,6 +1,6 @@
 export default {
     getRegion: {
-        url: 'https://tumaxflashapi.to8to.com/api/provAndCity',
+        url: '',
         method: 'get',
         before: (requestData: any) => requestData,
         filter(responseData: { data: { [s: string]: PlainObject } | ArrayLike<PlainObject> }) {

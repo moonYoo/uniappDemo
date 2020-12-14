@@ -1,4 +1,4 @@
-# tumax-roam
+# uniapp Demo
 
 ## Project structure
 
@@ -17,29 +17,35 @@ sfc.d.ts // 全局定义文件
 ```
 
 ## Project setup
+
 ```
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 yarn run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 yarn run build
 ```
 
 ### Run your tests
+
 ```
 yarn run test
 ```
 
 ### Lints and fixes files
+
 ```
 yarn run lint
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
