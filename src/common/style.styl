@@ -1,0 +1,117 @@
+page
+    width 100%
+    height 100%
+div, view, input
+    box-sizing border-box
+    font-size 30px
+button
+    padding 0
+.flex
+    display flex
+    align-content center
+    align-items center
+    &.column
+        flex-direction column
+    &.no-grow
+        flex-grow 0
+    &.grow
+        flex-grow 100
+    &.no-shrink
+        flex-shrink 0
+    &.center
+        justify-content center
+        align-items center
+    &.no-wrap
+        flex-wrap nowrap
+    &.wrap
+        flex-wrap wrap
+.one-line
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
+.btn
+    btn-height = 92px
+    display inline-block
+    text-align center
+    height btn-height
+    line-height btn-height - 4px
+    min-width 200px
+    padding 0 40px
+    font-size 30px
+    font-weight 500
+    border-radius 46px
+    color #ffffff
+    background-color main-color
+    transition background 0.2s
+    &.btn-s
+        btn-s-height = 48px
+        height btn-s-height
+        line-height btn-s-height -2px
+        font-size 24px
+        color main-color
+        font-weight 500
+        padding 0 20px
+    &.btn-l
+        btn-s-height = 76px
+        height btn-s-height
+        line-height btn-s-height -2px
+        font-size 30px
+        color main-color
+        font-weight 400
+        padding 0 70px
+    &:hover
+        opacity 0.9
+    &:active
+        background-color rgb(65, 142, 144)
+    &.btn-border
+        background-color transparent
+        border solid 2px #00B5B8
+        color #00B5B8
+.bold
+    font-weight bold
+.mid-bold
+    font-weight 500
+.dot-falling
+    display flex
+    justify-content space-around
+    align-items center
+    position relative
+    height 60px
+    width 100px
+    size = 20px
+    radius = 10px
+    view
+        width size
+        height size
+        overflow hidden
+        border-radius radius
+        background-color #9880ff
+        animation dotFalling 1s infinite linear
+        animation-delay 0.1s
+        transform translate(0, 0)
+        background-color rgba(219, 221, 223, 1)
+    &:before, &:after
+        content ''
+        display inline-block
+        overflow hidden
+        width size
+        height size
+        border-radius radius
+        background-color rgba(219, 221, 223, 1)
+        transform translate(0, 0)
+    &:before
+        animation dotFalling 1s infinite linear
+        animation-delay 0s
+    &:after
+        animation dotFalling 1s infinite linear
+        animation-delay 0.2s
+    @keyframes dotFalling
+        0%
+            background-color rgba(219, 221, 223, 0)
+            transform translate(0, -20px)
+        25%, 50%, 75%
+            background-color rgba(219, 221, 223, 1)
+            transform translate(0, 0)
+        100%
+            background-color rgba(219, 221, 223, 0)
+            transform translate(0, 20px)
